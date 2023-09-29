@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>MDMS</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/jquery.flowchart.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.flowchart.js"></script>
+
+    <style>
+      .flowchart-example-container {
+        width: 100%;
+        height: 400px;
+        background: white;
+        border: 1px solid #BBB;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+         <a href="dashboard.html" class="logo d-flex align-items-center">
+          <img src="assets/images/logo_black_final.png" alt="" />
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number">4</span> </a
+            ><!-- End Notification Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">
+                You have 4 new notifications
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-exclamation-circle text-warning"></i>
+                <div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>30 min. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-x-circle text-danger"></i>
+                <div>
+                  <h4>Atque rerum nesciunt</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>1 hr. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-check-circle text-success"></i>
+                <div>
+                  <h4>Sit rerum fuga</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>2 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-info-circle text-primary"></i>
+                <div>
+                  <h4>Dicta reprehenderit</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li class="dropdown-footer">
+                <a href="#">Show all notifications</a>
+              </li>
+            </ul>
+            <!-- End Notification Dropdown Items -->
+          </li>
+          <!-- End Notification Nav -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-chat-left-text"></i>
+              <span class="badge bg-success badge-number">3</span> </a
+            ><!-- End Messages Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
+            >
+              <li class="dropdown-header">
+                You have 3 new messages
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-1.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Maria Hudson</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>4 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-2.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Anna Nelson</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>6 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-3.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>David Muldon</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>8 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="dropdown-footer">
+                <a href="#">Show all messages</a>
+              </li>
+            </ul>
+            <!-- End Messages Dropdown Items -->
+          </li>
+          <!-- End Messages Nav -->
+
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >J. Doe</span
+              > </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6>John Doe</h6>
+                <span>User</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-gear"></i>
+                  <span>Account Settings</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="pages-faq.html"
+                >
+                  <i class="bi bi-question-circle"></i>
+                  <span>Need Help?</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="index.html"
+                >
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="dashboard.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#components-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-menu-button-wide"></i><span>Entities</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="components-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="devices.html">
+                <i class="bi bi-circle"></i><span>Devices</span>
+              </a>
+            </li>
+            <li>
+              <a href="assets.html">
+                <i class="bi bi-circle"></i><span>Assets</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="customers.html">
+            <i class="bi bi-person"></i>
+            <span>Customers</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="reports.html">
+            <i class="bi bi-person"></i>
+            <span>Reports</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="rules.html">
+            <i class="bi bi-person"></i>
+            <span>Rules</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="users-profile.html">
+            <i class="bi bi-person"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="users-profile.html">
+            <i class="bi bi-person"></i>
+            <span>Security</span>
+          </a>
+        </li>
+        <!-- End Profile Page Nav -->
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Rules</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Rules</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body p-4">
+                  
+                  <div id="chart_container">
+                    <div class="flowchart-example-container" id="flowchartworkspace"></div>
+                  </div>
+
+                  <div class="draggable_operators">
+                    <div class="draggable_operators_label">
+                      Operators (drag and drop them in the flowchart):
+                    </div>
+                    <div class="draggable_operators_divs my-2" style="display: flex; justify-content: flex-start;">
+                      <div class="draggable_operator badge bg-secondary mx-3" data-nb-inputs="1" data-nb-outputs="0">1 input</div>
+                      <div class="draggable_operator badge bg-secondary mx-3" data-nb-inputs="0" data-nb-outputs="1">1 output</div>
+                      <div class="draggable_operator badge bg-secondary mx-3" data-nb-inputs="1" data-nb-outputs="1">1 input &amp; 1 output</div>
+                      <div class="draggable_operator badge bg-secondary mx-3" data-nb-inputs="1" data-nb-outputs="2">1 in &amp; 2 out</div>
+                      <div class="draggable_operator badge bg-secondary mx-3" data-nb-inputs="2" data-nb-outputs="1">2 in &amp; 1 out</div>
+                      <div class="draggable_operator badge bg-secondary mx-3" data-nb-inputs="2" data-nb-outputs="2">2 in &amp; 2 out</div>
+                    </div>
+                  </div>
+                  <div id="operator_properties" style="display: block;">
+                    <label for="operator_title">Operator's title: </label><input id="operator_title" type="text">
+                  </div>
+                  <div id="link_properties" style="display: block;">
+                    <label for="link_color">Link's color: </label><input id="link_color" type="color">
+                  </div>
+                  <div style="display: flex; justify-content: flex-start;" class="">                 
+                     <button class="create_operator btn btn-primary btn-sm mx-3">Create operator</button>
+                  <button class="delete_selected_button btn btn-danger btn-sm mx-3">Delete selected operator / link</button>                 
+                  <button class="get_data btn btn-success btn-sm mx-3" id="get_data">Get data</button>
+                  <button class="set_data btn btn-secondary btn-sm mx-3" id="set_data">Set data</button>
+                  <button id="save_local " class="btn btn-secondary btn-sm mx-3">Save to local storage</button>
+                  <button id="load_local" class="btn btn-secondary btn-sm mx-3">Load from local storage</button>
+                </div>
+
+                  <div class="form-control">
+                    <textarea id="flowchart_data"  rows="10" class="w-100 fs-6"></textarea>
+                  </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer"></footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+      /* global $ */
+      $(document).ready(function() {
+        var $flowchart = $('#flowchartworkspace');
+        var $container = $flowchart.parent();
+  
+  
+        // Apply the plugin on a standard, empty div...
+        $flowchart.flowchart({
+          data: defaultFlowchartData,
+          defaultSelectedLinkColor: '#000055',
+          grid: 10,
+          multipleLinksOnInput: true,
+          multipleLinksOnOutput: true
+        });
+  
+  
+        function getOperatorData($element) {
+          var nbInputs = parseInt($element.data('nb-inputs'), 10);
+          var nbOutputs = parseInt($element.data('nb-outputs'), 10);
+          var data = {
+            properties: {
+              title: $element.text(),
+              inputs: {},
+              outputs: {}
+            }
+          };
+  
+          var i = 0;
+          for (i = 0; i < nbInputs; i++) {
+            data.properties.inputs['input_' + i] = {
+              label: 'Input ' + (i + 1)
+            };
+          }
+          for (i = 0; i < nbOutputs; i++) {
+            data.properties.outputs['output_' + i] = {
+              label: 'Output ' + (i + 1)
+            };
+          }
+  
+          return data;
+        }
+  
+  
+  
+        //-----------------------------------------
+        //--- operator and link properties
+        //--- start
+        var $operatorProperties = $('#operator_properties');
+        $operatorProperties.hide();
+        var $linkProperties = $('#link_properties');
+        $linkProperties.hide();
+        var $operatorTitle = $('#operator_title');
+        var $linkColor = $('#link_color');
+  
+        $flowchart.flowchart({
+          onOperatorSelect: function(operatorId) {
+            $operatorProperties.show();
+            $operatorTitle.val($flowchart.flowchart('getOperatorTitle', operatorId));
+            return true;
+          },
+          onOperatorUnselect: function() {
+            $operatorProperties.hide();
+            return true;
+          },
+          onLinkSelect: function(linkId) {
+            $linkProperties.show();
+            $linkColor.val($flowchart.flowchart('getLinkMainColor', linkId));
+            return true;
+          },
+          onLinkUnselect: function() {
+            $linkProperties.hide();
+            return true;
+          }
+        });
+  
+        $operatorTitle.keyup(function() {
+          var selectedOperatorId = $flowchart.flowchart('getSelectedOperatorId');
+          if (selectedOperatorId != null) {
+            $flowchart.flowchart('setOperatorTitle', selectedOperatorId, $operatorTitle.val());
+          }
+        });
+  
+        $linkColor.change(function() {
+          var selectedLinkId = $flowchart.flowchart('getSelectedLinkId');
+          if (selectedLinkId != null) {
+            $flowchart.flowchart('setLinkMainColor', selectedLinkId, $linkColor.val());
+          }
+        });
+        //--- end
+        //--- operator and link properties
+        //-----------------------------------------
+  
+        //-----------------------------------------
+        //--- delete operator / link button
+        //--- start
+        $(document).on('click', '.delete_selected_button', function() {
+          $flowchart.flowchart('deleteSelected');
+        });
+        //--- end
+        //--- delete operator / link button
+        //-----------------------------------------
+  
+  
+  
+        //-----------------------------------------
+        //--- create operator button
+        //--- start
+        var operatorI = 0;
+        $flowchart.parent().siblings('.create_operator').click(function() {
+          var operatorId = 'created_operator_' + operatorI;
+          var operatorData = {
+            top: ($flowchart.height() / 2) - 30,
+            left: ($flowchart.width() / 2) - 100 + (operatorI * 10),
+            properties: {
+              title: 'Operator ' + (operatorI + 3),
+              inputs: {
+                input_1: {
+                  label: 'Input 1',
+                }
+              },
+              outputs: {
+                output_1: {
+                  label: 'Output 1',
+                }
+              }
+            }
+          };
+  
+          operatorI++;
+  
+          $flowchart.flowchart('createOperator', operatorId, operatorData);
+  
+        });
+        //--- end
+        //--- create operator button
+        //-----------------------------------------
+  
+  
+  
+  
+        //-----------------------------------------
+        //--- draggable operators
+        //--- start
+        //var operatorId = 0;
+        var $draggableOperators = $('.draggable_operator');
+        $draggableOperators.draggable({
+          cursor: "move",
+          opacity: 0.7,
+  
+          // helper: 'clone',
+          appendTo: 'body',
+          zIndex: 1000,
+  
+          helper: function(e) {
+            var $this = $(this);
+            var data = getOperatorData($this);
+            return $flowchart.flowchart('getOperatorElement', data);
+          },
+          stop: function(e, ui) {
+            var $this = $(this);
+            var elOffset = ui.offset;
+            var containerOffset = $container.offset();
+            if (elOffset.left > containerOffset.left &&
+              elOffset.top > containerOffset.top &&
+              elOffset.left < containerOffset.left + $container.width() &&
+              elOffset.top < containerOffset.top + $container.height()) {
+  
+              var flowchartOffset = $flowchart.offset();
+  
+              var relativeLeft = elOffset.left - flowchartOffset.left;
+              var relativeTop = elOffset.top - flowchartOffset.top;
+  
+              var positionRatio = $flowchart.flowchart('getPositionRatio');
+              relativeLeft /= positionRatio;
+              relativeTop /= positionRatio;
+  
+              var data = getOperatorData($this);
+              data.left = relativeLeft;
+              data.top = relativeTop;
+  
+              $flowchart.flowchart('addOperator', data);
+            }
+          }
+        });
+        //--- end
+        //--- draggable operators
+        //-----------------------------------------
+  
+  
+        //-----------------------------------------
+        //--- save and load
+        //--- start
+        function Flow2Text() {
+          var data = $flowchart.flowchart('getData');
+          $('#flowchart_data').val(JSON.stringify(data, null, 2));
+        }
+        $('#get_data').click(Flow2Text);
+  
+        function Text2Flow() {
+          var data = JSON.parse($('#flowchart_data').val());
+          $flowchart.flowchart('setData', data);
+        }
+        $('#set_data').click(Text2Flow);
+  
+        /*global localStorage*/
+        function SaveToLocalStorage() {
+          if (typeof localStorage !== 'object') {
+            alert('local storage not available');
+            return;
+          }
+          Flow2Text();
+          localStorage.setItem("stgLocalFlowChart", $('#flowchart_data').val());
+        }
+        $('#save_local').click(SaveToLocalStorage);
+  
+        function LoadFromLocalStorage() {
+          if (typeof localStorage !== 'object') {
+            alert('local storage not available');
+            return;
+          }
+          var s = localStorage.getItem("stgLocalFlowChart");
+          if (s != null) {
+            $('#flowchart_data').val(s);
+            Text2Flow();
+          }
+          else {
+            alert('local storage empty');
+          }
+        }
+        $('#load_local').click(LoadFromLocalStorage);
+        //--- end
+        //--- save and load
+        //-----------------------------------------
+  
+  
+      });
+  
+      var defaultFlowchartData = {
+        operators: {
+          operator1: {
+            top: 20,
+            left: 20,
+            properties: {
+              title: 'Operator 1',
+              inputs: {},
+              outputs: {
+                output_1: {
+                  label: 'Output 1',
+                }
+              }
+            }
+          },
+          operator2: {
+            top: 80,
+            left: 300,
+            properties: {
+              title: 'Operator 2',
+              inputs: {
+                input_1: {
+                  label: 'Input 1',
+                },
+                input_2: {
+                  label: 'Input 2',
+                },
+              },
+              outputs: {}
+            }
+          },
+        },
+        links: {
+          link_1: {
+            fromOperator: 'operator1',
+            fromConnector: 'output_1',
+            toOperator: 'operator2',
+            toConnector: 'input_2',
+          },
+        }
+      };
+      if (false) console.log('remove lint unused warning', defaultFlowchartData);
+    </script>
+  </body>
+</html>
